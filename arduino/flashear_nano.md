@@ -1,70 +1,62 @@
-# Programación del Arduino Nano
+# Flashing the Arduino Nano
 
-## Software requerido download Arduino IDE 2.0.0 (validado)
+## Required software
 
+Download and install Arduino IDE 2.0.0, which has been tested and validated for this project:
 
-En la documentación te sugiere una versión diferente pero se valido con esta versión y funciono bien: [Arduino IDE](https://github.com/arduino/arduino-ide/releases?page=2)
+[Arduino IDE](https://github.com/arduino/arduino-ide/releases?page=2)
 
+Although the official documentation recommends a different version, Arduino IDE 2.0.0 has been tested successfully.
 
-## Check port
+## Checking the serial port
 
+Check which serial port is assigned to the Arduino:
 
 ```bash
 ls /dev/ttyUSB\*
 ```
 
-o 
+Alternatively, check:
 
 ```bash
 ls /dev/ttyAM\*
 ```
 
 
-## Configuración
+## Configuration
 
-De la carpeta arduino/firmware **Copy the libraries (MPU6050, I2Cdev,Adafruit_NeoPixel) to the arduino-2.0.0/libraries folder.**
+From the `arduino/firmware` folder, copy the following libraries to the `arduino-2.0.0/libraries` folder:
 
+**MPU6050, I2Cdev, and Adafruit_NeoPixel**
 
-Board:
+Select the following board:
 
-
-
-```bash
+```text
 Arduino Nano
 ```
 
-
-
-Processor:
+Select the following processor:
 ```bash
 ATmega328P (Old Bootloader)
 ```
 
 
-## Compilar
+## Compiling and uploading the firmware
 
-Abrir:
+Open the following sketch:
 
 ```bash
 AutoModelCarLaSalle\docs\arduino\firmware\main
 ```
 
-Seleccionar: **main.ino**
+Select **main.ino** and verify that it compiles without errors.
+
+Then compile the sketch and upload it to the Arduino Nano.
+
+## Verifying the firmware with the Serial Monitor
+
+Open the Serial Monitor and set the baud rate to **115200**. The Arduino should output:
 
 ```text
-Verificar que no tenga errores
+YPR [value]
 ```
-
-
-Posteriormente:
-```text
-Compilar y grabarlo en el arduino nano
-```
-## Validar con el monitor Serie
-
-Recuerda que esta a **115200** baudios y debe regresar:
-
-```text
- YPR [valor]
-```
-

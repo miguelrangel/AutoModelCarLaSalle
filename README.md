@@ -1,24 +1,24 @@
 # AutoModelCar La Salle
 
-Repositorio para la documentación, configuración y desarrollo del AutoModelCar V3 modificado.
+Repository for the documentation, configuration, and development of the modified AutoModelCar V3.
 
 
 
-![Componentes principales](images/componentes.png)
+![Main components](images/componentes.png)
 
-## Objetivo
+## Objective
 
-Este repositorio documenta:
+This repository documents:
 
-* Instalación del sistema operativo en Odroid XU4.
-* Instalación de ROS Kinetic.
-* Configuración de la Intel RealSense SR300.
-* Programación del Arduino Nano.
-* Modificaciones de hardware.
-* Modificaciones de software.
-* Registro histórico de avances.
+* Operating system installation on the Odroid XU4.
+* ROS Kinetic installation.
+* Intel RealSense SR300 configuration.
+* Arduino Nano programming.
+* Hardware modifications.
+* Software modifications.
+* Historical progress log.
 
-## Estructura
+## Structure
 
 - ├── hardware
 - ├── odroid
@@ -28,28 +28,29 @@ Este repositorio documenta:
 
 
 
-## Hardware principal
+## Main hardware
 
 * Odroid XU4
 * Arduino Nano
 * Intel RealSense SR300
 * ESC
-* Servo de dirección
-* Chasis AutoModelCar V3
+* Steering servo
+* AutoModelCar V3 chassis
 
-![Diagrama General](images/diagramGeneral.png)
+![General diagram](images/diagramGeneral.png)
 
 
-## Estado del proyecto
+## Project status
 
-* \[ ] Configuración inicial
-* \[ ] Pruebas de dirección
-* \[ ] Pruebas de velocidad
-* \[ ] Integración RealSense
-* \[ ] Navegación autónoma
+* \[X] Initial configuration
+* \[X] Steering tests
+* \[X] Speed tests
+* \[X] RealSense integration
+* \[ ] Remote communication
+* \[ ] SLAM
+* \[ ] Autonomous navigation
 
-## Autor
+## Author
 
 Miguel Angel García
-Universidad La Salle México
-
+La Salle University Mexico

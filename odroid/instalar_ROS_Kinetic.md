@@ -1,8 +1,8 @@
-# Instalación de ROS Kinetic
+# Installing ROS Kinetic
 
 
 
-## Agregar repositorios
+## Adding repositories
 
 
 
@@ -12,7 +12,7 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt
 
 
 
-## Llaves
+## Keys
 
 ```bash
 sudo apt install curl # if you haven't already installed curl
@@ -21,7 +21,7 @@ sudo apt install curl # if you haven't already installed curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
 
-## Instalación
+## Installation
 
 ```bash
 sudo apt update
@@ -108,8 +108,7 @@ source ~/.bashrc
 ```
 
 
-![Flujo extendido](../images/FlujoExtendido.png)
-
+![Extended workflow](../images/FlujoExtendido.png)
 
 
 

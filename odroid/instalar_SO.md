@@ -1,41 +1,41 @@
-# Instalación de Ubuntu en Odroid XU4
+# Installing Ubuntu on the Odroid XU4
 
 
 
-## Requisitos
+## Requirements
 
 
 
 - Odroid XU4
 
-- Tarjeta microSD o eMMC
+- microSD card or eMMC
 
-- Adaptador USB
+- USB adapter
 
 ![Odroid](../images/diagram2.png)
 
 
-## Descarga de imagen
+## Downloading the image
 
 
 
-Descargar una versión compatible de Ubuntu para [Odroid XU4](https://odroid.in/ubuntu_16.04lts/), ya que no esta disponible la versión oficial, se descarga una versión compartible ubuntu-16.04.3-4.9-mate-odroid-xu4-20171025.img.xz 
+Download a compatible version of Ubuntu for the [Odroid XU4](https://odroid.in/ubuntu_16.04lts/). Since the official version is not available, download the compatible `ubuntu-16.04.3-4.9-mate-odroid-xu4-20171025.img.xz` version.
 
 
 
-## Grabación de imagen
+## Writing the image
 
-primero se descomprime la imagen usando:
+First, extract the image using:
 
 
 ```
 unxz ubuntu-16.04.3-4.9-mate-odroid-xu4-20171025.img.xz
 ```
 
-(si no lo tienen lo pueden instalar con "sudo apt-get unxz")
+(if it is not installed, you can install it with `sudo apt-get unxz`)
 
 
-si tienes el adaptador de eMMC a microSD debes identificar como la reconoce el sistema ejemplo: mmcblk0 mmcblk0p1 mmcblk0p2 mmcblk0p3
+If you have an eMMC-to-microSD adapter, identify how the system recognizes it. For example: `mmcblk0`, `mmcblk0p1`, `mmcblk0p2`, `mmcblk0p3`.
 
 
 
@@ -47,21 +47,21 @@ sudo dd if=ubuntu.img of=/dev/mmcblk0p1 bs=4M status=progress
 ```
 
 
-## Tambien puedes usar Balena Etcher
+## You can also use Balena Etcher
 
 
 
-1\. Selecciona la imagen.
+1\. Select the image.
 
-2\. Selecciona la microSD (identificador).
+2\. Select the microSD card (identifier).
 
-3\. Selecciona Flash.
+3\. Select Flash.
 
-4\. Verifica que se instalo correctamente.
+4\. Verify that it was installed correctly.
 
 
 
-## Actualización
+## Updating
 
 
 
@@ -72,4 +72,4 @@ sudo apt upgrade -y
 
 
 
-Recuarda para esta versión el usuario y el password es: **odroid**
+Remember that for this version, the username and password are: **odroid**
